@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		html,
+		body {
+			background-color: #b94273;
+			position: relative;
+			margin: 0;
+		}
+		figure {
+		    position: absolute;
+		    display: flex;
+		    flex-direction: column;
+		    margin: 0;
+		    left: calc((100vw - 300px) / 2);
+		    top: 30px;
+		    justify-content: center;
+		    align-items: center;
+		}
+		figure img:first-child {
+			width: 300px;
+		}
+		figure img:last-child {
+			width: 50%;
+			margin-top: 30px;
+		}
+		h1 {
+			font-size: 45px;
+			margin-top: 63px;
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+		h2 {
+			text-transform: uppercase;
+			text-decoration: underline;
+			font-size: 40px;
+		}
+		p {
+			text-transform: uppercase;
+			font-size: 30px;
+			line-height: 13px;
+		}
+		.menu {
+			display: flex;
+			justify-content: space-between;
+		}
+		.menu .col {
+			height: 100vh;
+			width: calc(50vw - 80px);
+			text-align: center;
+		}
+		.menu .col.col-r p{
+			line-height: 22px;
+		}
+		.slogan {
+			font-size: 60px;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 0;
+		}
+		.flag {
+			position: absolute;
+			transform: rotate(25deg);
+			text-transform: none;
+			font-size: 30px;
+			right: 0;
+		    top: 38px;
+		}
+		body:before {
+			content: "";
+			outline: 1px solid;
+			width: 1920px;
+			height: 1080px;
+			display:  block;
+			background-color: transparent;
+		    position: absolute;
+	        z-index: -1;
+		}
+	</style>
+</head>
+<body >
+	<p class="flag">
+		<b>Llevatelos siempre</b>
+	</p>
+	<figure>
+		<img src="images/logo-text.png">
+		<img src="images/logo-img.png">
+	</figure>
+	<div class="menu">
+		<div class="col col-l">
+			<h1>Menú martes</h1>
+			<h2>Pirmeros</h2>
+			<p><b>Menestra con velouté de jamón&nbsp;</b>– 5,5 €</p>
+			<p><b>Patatas con costillas&nbsp;</b>– 6 €</p>
+			<p><b>Pasta en salsa de hongos y trufa&nbsp;</b>– 7,5 €</p>
+			<p><b>Lasaña de carne&nbsp;</b>– 7 €</p>
+			<p><b>Lentejas con chorizo&nbsp;</b>– 5,5 €</p>	
+			<h2>Seguendos</h2>
+			<p><b>Corvina con almejas&nbsp;</b>– 7 €</p>
+			<p><b>Merluza con pisto manchego&nbsp;</b>– 7 €</p>
+			<p><b>Pollo relleno con puré de patata</b>&nbsp;– 6,5 €</p>
+			<p><b>Morcillo de ternera con verduras&nbsp;</b>– 7 €</p>
+			<p><b>Tortilla de patatas </b>– 7 €</p>	
+			<h2>Postres</h2>
+			<p><b>Flan de queso&nbsp;</b>– 3,5 €</p>
+			<p><b>Tarta de la viña&nbsp;</b>– 4,5 €</p>
+			<p><strong>Mousse con frutos rojos</strong>&nbsp;– 4,5 €</p>
+			<p><strong>Natillas caseras</strong> – 3,5 €</p><p>&nbsp;</p>
+		</div>
+		<div class="col col-r">
+			<h1>Nuestros fijos</h1>
+			<p><b>Ensaladilla con ventresca</b></p>
+			<p>10,50</p>
+			<p><b>Pimientos rellenos de bacalao</b></p>
+			<p>12,50 €</p>
+			<p><b>Croquetas de Jamón Ibérico</b></p>
+			<p>22 €/12 €</p>
+			<p><b>Callos a la madrileña</b></p>
+			<p>12,50 €</p>
+			<p><b>Oreja guisada</b></p>
+			<p>12,50 €</p>
+			<p><b>Carrilleras de cerdo ibérico</b></p>
+			<p>12,50 €</p>
+			<p><b>Albóndigas con tomate</b></p>
+			<p>12,50 €</p>
+			<p><b>Postre - Arroz con leche</b></p>
+			<p>8,50 €</p>
+		</div>
+	</div>
+
+	<p class="slogan">
+		Déjanos conquistar tu paladar
+	</p>
+</body>
+</html>

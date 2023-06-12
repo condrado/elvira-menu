@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title></title>
+	<style type="text/css">
+		html,
+		body {
+			background-color: #b94273;
+			position: relative;
+			margin: 0;
+		}
+		figure {
+		    position: absolute;
+		    display: flex;
+		    flex-direction: column;
+		    margin: 0;
+		    left: calc((100vw - 300px) / 2);
+		    top: 30px;
+		    justify-content: center;
+		    align-items: center;
+		}
+		figure img:first-child {
+			width: 15.6vw;
+		}
+		figure img:last-child {
+			width: 7.8vw;
+			margin-top: 30px;
+		}
+		h1 {
+			font-size: 2.35vw;
+			margin-top: 63px;
+			text-transform: uppercase;
+			text-decoration: underline;
+		}
+		h2 {
+			text-transform: uppercase;
+			text-decoration: underline;
+			font-size: 2.1vw;
+		}
+		p {
+			text-transform: uppercase;
+			font-size: 1.6vw;
+			line-height: 0.52vw;
+		}
+		.menu {
+			display: flex;
+			justify-content: space-between;
+		}
+		.menu .col {
+			height: 100vh;
+			width: calc(50vw - 80px);
+			text-align: center;
+		}
+		.menu .col.col-r p{
+			line-height: 26px;
+		}
+    	.menu .col.col-r p span{
+			display: block;
+		}
+    	.menu .col.col-r p span:last-child{
+			margin-top: 16px;
+		}
+		.slogan {
+			font-size: 3.2vw;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: 0;
+		}
+		.flag {
+			position: absolute;
+			transform: rotate(25deg);
+			text-transform: none;
+			font-size: 30px;
+			right: 0;
+		    top: 38px;
+		}
+		body:before {
+			content: "";
+			outline: 1px solid;
+			width: 1920px;
+			height: 1080px;
+			display:  block;
+			background-color: transparent;
+		    position: absolute;
+	        z-index: -1;
+		}
+	</style>
+</head>
+<body >
+	<p class="flag">
+		<b>Llevatelos siempre</b>
+	</p>
+	<figure>
+		<img src="images/logo-text.png">
+		<img src="images/logo-img.png">
+	</figure>
+	<div class="menu">
+		<div class="col col-l">
+			<h1>Menú martes</h1>
+			<h2>Pirmeros</h2>
+      <div id="primeros"></div>
+			<h2>Seguendos</h2>
+      <div id="segundos"></div>
+			<h2>Postres</h2>
+      <div id="postres"></div>
+		</div>
+		<div class="col col-r">
+			<h1>Nuestros fijos</h1>
+      <div id="fijos"></div>
+		</div>
+	</div>
+
+	<p class="slogan">
+		Déjanos conquistar tu paladar
+	</p>
+
+
+  <script defer type="module" src="assets/script-tv.js"></script>
+</body>
+</html>
